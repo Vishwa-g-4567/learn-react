@@ -35,7 +35,7 @@ const QrGenerator = () => {
   };
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center justify-center">
+      <div className="w-full h-screen p-2.5 flex flex-col items-center justify-center">
         <h1 className="text-lg font-semibold text-[#3498db] py-2.5">
           QR CODE GENERATOR
         </h1>
@@ -76,30 +76,20 @@ const QrGenerator = () => {
           />
           <div className="w-full flex items-center justify-center gap-5">
             <button
-              className="px-5 py-4 text-lg rounded text-white bg-[#3498db] hover:bg-[#2a82bd] disabled:bg-[#bdc3c7] disabled:cursor-not-allowed transition"
+              className="px-3 py-2.5 rounded text-white bg-[#3498db] hover:bg-[#2a82bd] disabled:bg-[#bdc3c7] disabled:cursor-not-allowed transition"
               onClick={generateQr}
               disabled={loading}
             >
               Generate QR Code
             </button>
             <button
-              className="px-5 py-4 text-lg rounded text-white bg-[#27ae60] hover:bg-[#1d8a4b] transition"
+              className="px-3 py-2.5 rounded text-white bg-[#27ae60] hover:bg-[#1d8a4b] transition"
               onClick={downloadQr}
             >
               Download QR Code
             </button>
           </div>
         </div>
-        <p className="mt-5">
-          Designed By
-          <a
-            className="text-[#3498db]"
-            target="_blank"
-            href="https://vishwa-g-4567.github.io/Portfolio/"
-          >
-            <span> Vishwa</span>
-          </a>
-        </p>
       </div>
     </>
   );

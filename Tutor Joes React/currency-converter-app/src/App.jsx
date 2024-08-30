@@ -26,7 +26,7 @@ const App = () => {
   }, [amount, exchangeRate]);
   return (
     <>
-      <div className="w-1/3 h- bg-white rounded-lg px-5 py-2.5">
+      <div className="w-[450px] h- bg-white rounded-lg px-5 py-2.5">
         <div className="w-full h-[200px] mb-2.5 bg-[url('./assets/currency.png')] bg-[length:50%] bg-no-repeat bg-center"></div>
         <div>
           <h1 className="text-2xl font-semibold uppercase py-2.5 mb-2.5 text-[#3498db] text-center border-y-2 border-dashed border-[#ccc]">
