@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import bmiImg from "./assets/bmi.png";
 
 const App = () => {
   const [height, setHeight] = useState("");
@@ -40,8 +41,12 @@ const App = () => {
   };
   return (
     <>
-      <div className="w-[800px] min-h-[400px] p-5 bg-white rounded-lg shadow shadow-black flex">
-        <div className="w-[350px] bg-[url('./assets/bmi.png')] bg-no-repeat bg-center bg-contain"></div>
+      <div className="w-[800px] min-h-[400px] p-5 bg-white rounded-lg shadow shadow-black flex flex-col min-[645px]:flex-row">
+        <img
+          src={bmiImg}
+          alt="bmi-img"
+          className="w-[350px] mx-auto object-contain"
+        />
         <div className="flex-1 p-4">
           <h1 className="text-2xl font-medium mb-2.5 py-2.5 uppercase text-[#2980b9]">
             BMI Calculator
